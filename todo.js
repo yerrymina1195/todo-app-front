@@ -98,7 +98,7 @@ function afficher (tableau){
       tbody.innerHTML += `
       <div class=" p-2  add   d-flex justify-content-between align-items-center">
        <div>
-      <button ${element.ischecked === false ? `class="bg-white d-flex justify-content-center align-items-center  boutoncircle  border border-secondary" onclick="checkage(${element.id})"`:`class=" bg-white d-flex justify-content-center align-items-center  boutoncircle checkedbg  border-0  border border-secondary"onclick="checkage(${element.id})"`}>
+      <button ${element.ischecked === false ? `class="bg-transparent d-flex justify-content-center align-items-center  boutoncircle  border border-secondary" onclick="checkage(${element.id})"`:`class=" bg-transparent d-flex justify-content-center align-items-center  boutoncircle checkedbg  border-0  border border-secondary"onclick="checkage(${element.id})"`}>
           <img src="./images/icon-check.svg" ${element.ischecked === false ? 'class=" opacity-0 icone-checked "':'class=" icone-checked"'} alt="nj">
       </button>
     </div>

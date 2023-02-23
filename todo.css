@@ -13,7 +13,11 @@ body {
 
     background-color: black;
 }
-
+.boutoncircle{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
 body.Dark .haut{
     height: 300px;
     background-image: url(./images/bg-desktop-dark.jpg);
@@ -71,6 +75,12 @@ body.light input[type=text]:focus{
     border: none !important;
     box-shadow: none;
     color: rgb(107, 102, 102);
+}
+.add:first-child{
+    border-radius: 10px 10px 0 0;
+}
+.added:last-child{
+    border-radius: 0 0 10px 10px;
 }
 body.Dark .add{
 background-color:  hsl(235, 24%, 19%);

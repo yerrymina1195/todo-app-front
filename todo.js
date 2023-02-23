@@ -96,9 +96,9 @@ function afficher (tableau){
     tbody.innerHTML ="";
     tableau.forEach((element,index) => {
       tbody.innerHTML += `
-      <div class=" p-2 rounded-top add   d-flex justify-content-between">
+      <div class=" p-2  add   d-flex justify-content-between align-items-center">
        <div>
-      <button ${element.ischecked === false ? `class="btn  rounded-circle   border border-secondary" onclick="checkage(${element.id})"`:`class="btn checkedbg rounded-circle border-0  border border-secondary"onclick="checkage(${element.id})"`}>
+      <button ${element.ischecked === false ? `class="bg-white d-flex justify-content-center align-items-center  boutoncircle  border border-secondary" onclick="checkage(${element.id})"`:`class=" bg-white d-flex justify-content-center align-items-center  boutoncircle checkedbg  border-0  border border-secondary"onclick="checkage(${element.id})"`}>
           <img src="./images/icon-check.svg" ${element.ischecked === false ? 'class=" opacity-0 icone-checked "':'class=" icone-checked"'} alt="nj">
       </button>
     </div>
@@ -193,7 +193,7 @@ if(all.classList.contains('active')){
   }
 
   function itemsleft() {
-    let itemsleft=  tableautest.filter( (element) => element.ischecked === true);
+    let itemsleft=  tableautest.filter( (element) => element.ischecked === false);
     console.log(itemsleft.length);
     count[0].innerHTML= itemsleft.length;
     count[1].innerHTML= itemsleft.length;
